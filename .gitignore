@@ -1,0 +1,17 @@
+# Terraform state & plans
+*.tfstate
+*.tfstate.*
+tfplan
+**/.terraform/
+*.tfplan
+
+# Sensitive backend config
+backend.hcl
+
+# Local variable overrides
+*.auto.tfvars
+!example.auto.tfvars
+
+# Crash logs
+crash.log
+crash.*.log

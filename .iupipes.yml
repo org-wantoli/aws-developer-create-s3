@@ -1,0 +1,16 @@
+project:
+  language: terraform
+
+deploy:
+  aws:
+    dev:
+      account: ""
+      region: "sa-east-1"
+
+infra:
+  terraform:
+    working-directory: "./infra"
+    node-version: "16"
+    version: "1.12.2"
+    log-trace: "false"
+    destroy: "false"
