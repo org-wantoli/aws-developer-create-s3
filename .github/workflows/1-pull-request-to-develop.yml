@@ -7,5 +7,5 @@ on:
 
 jobs:
     infra:
-        uses: wantoli/up-nested-reusable-infra-terraform/.github/workflows/feature.yml@v1
+        uses: org-wantoli/up-nested-reusable-infra-terraform/.github/workflows/feature.yml@v1
         secrets: inherit
