@@ -1,4 +1,4 @@
-name: "01 - [FEAT] Build & Pull Request"
+name: "1 - [FEAT] Build & Pull Request"
 
 on:
     push:
