@@ -4,7 +4,7 @@ project:
 deploy:
   aws:
     dev:
-      account: ""
+      account: "939558410024"
       region: "sa-east-1"
 
 infra:
