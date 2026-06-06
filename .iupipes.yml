@@ -14,3 +14,4 @@ infra:
     version: "1.12.2"
     log-trace: "false"
     destroy: "false"
+    custom-role: "GitHubActions-Terraform"
