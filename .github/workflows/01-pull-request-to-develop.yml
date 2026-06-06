@@ -5,7 +5,12 @@ on:
         branches:
             - 'feature**'
     workflow_dispatch:
- 
+
+permissions:
+    id-token: write
+    contents: read
+    pull-requests: write
+
 jobs:
     infra:
         uses: org-wantoli/up-nested-reusable-infra-terraform/.github/workflows/feature.yml@main
