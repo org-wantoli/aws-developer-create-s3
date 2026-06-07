@@ -6,6 +6,8 @@ deploy:
     dev:
       account: "939558410024"
       region: "sa-east-1"
+    config:
+      account: "391738926627"
 
 infra:
   terraform:
