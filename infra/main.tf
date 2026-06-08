@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "this" {
-  bucket        = "${var.accountid}-${var.bucket_name}-${var.environment}"
+  bucket        = "${var.accountId}-${var.bucket_name}-${var.environment}"
   force_destroy = var.force_destroy
 
   tags = {

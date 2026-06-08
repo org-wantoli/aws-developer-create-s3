@@ -16,7 +16,7 @@ variable "force_destroy" {
   default     = false
 }
 
-variable "accountid" {
+variable "accountId" {
   description = "account id to deploy infra as a code"
   type        = string
 }

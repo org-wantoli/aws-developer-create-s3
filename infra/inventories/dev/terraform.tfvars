@@ -1,3 +1,3 @@
 environment = "dev"
 bucket_name = "simulador-grade"
-account_id = "939558410024"
+accountId = "939558410024" 
