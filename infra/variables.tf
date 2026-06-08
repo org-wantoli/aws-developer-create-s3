@@ -1,14 +1,3 @@
-variable "aws_region" {
-  description = "AWS region where resources will be created."
-  type        = string
-  default     = "us-east-1"
-}
-
-variable "aws_profile" {
-  description = "AWS CLI profile used to authenticate."
-  type        = string
-  default     = ""
-}
 
 variable "bucket_name" {
   description = "Globally unique name for the S3 bucket."
@@ -25,4 +14,21 @@ variable "force_destroy" {
   description = "Allow bucket deletion even when it contains objects."
   type        = bool
   default     = false
+}
+
+variable "accountid" {
+  description = "account id to deploy infra as a code"
+  type        = string
+}
+
+variable "versioning" {
+  description = "(opcional) Variavel que habilita/desabilita versionamento"
+  type = string
+  default = "Disabled"
+
+  validation {
+    condition = contains(["Enabled", "Disabled", "Suspended"], var.versioning)
+    error_message = "Erro ao configurar 'versioning'. Os dados aceitos são: Enabled, Disabled, Suspended"
+  }
+  
 }
