@@ -5,6 +5,11 @@ on:
         types: closed
         branches: develop
 
+permissions:
+    id-token: write
+    contents: read
+    pull-requests: write
+
 jobs:
     infra:
         uses: org-wantoli/up-nested-reusable-infra-terraform/.github/workflows/develop.yml@main
