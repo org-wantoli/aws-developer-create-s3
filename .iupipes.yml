@@ -15,5 +15,5 @@ infra:
     node-version: "16"
     version: "1.12.2"
     log-trace: "false"
-    destroy: "false"
+    destroy: "true"
     custom-role: "GitHubActions-Terraform"
