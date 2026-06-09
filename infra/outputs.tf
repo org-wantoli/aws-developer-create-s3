@@ -13,7 +13,3 @@ output "bucket_region" {
   value       = aws_s3_bucket.this.region
 }
 
-output "custom_policy_arn" {
-  description = "ARN of the custom IAM policy."
-  value       = aws_iam_policy.s3_custom.arn
-}

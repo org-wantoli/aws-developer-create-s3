@@ -15,3 +15,5 @@ backend.hcl
 # Crash logs
 crash.log
 crash.*.log
+
+.DS_Store

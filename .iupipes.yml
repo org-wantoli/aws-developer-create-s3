@@ -4,8 +4,10 @@ project:
 deploy:
   aws:
     dev:
-      account: ""
+      account: "939558410024"
       region: "sa-east-1"
+    config:
+      account: "391738926627"
 
 infra:
   terraform:
@@ -14,3 +16,4 @@ infra:
     version: "1.12.2"
     log-trace: "false"
     destroy: "false"
+    custom-role: "GitHubActions-Terraform"

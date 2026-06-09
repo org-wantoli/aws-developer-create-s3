@@ -1,0 +1,11 @@
+name: "02 - [Dev] Build and Deploy"
+
+on:
+    pull_request:
+        types: closed
+        branches: develop
+
+jobs:
+    infra:
+        uses: org-wantoli/up-nested-reusable-infra-terraform/.github/workflows/develop.yml@main
+        secrets: inherit
